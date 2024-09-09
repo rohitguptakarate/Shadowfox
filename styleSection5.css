@@ -1,0 +1,93 @@
+.fifthSections {
+    min-height: 1400px;
+    color: white;
+    margin: 10px 150px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.fifthSections h2 {
+    font-weight: 900;
+    font-size: 7vw;
+    position: absolute;
+    z-index: -1;
+    color: rgba(255, 255, 255, 0.1);
+    left: 0;
+    margin: 10px 150px;
+
+}
+
+.fifthSections h1 {
+    font-size: 3rem;
+    padding: 25px 50px;
+
+}
+
+.discription_Projact {
+    width: 65rem;
+    color: #a2a3bb;
+}
+
+.Here_projacts {
+    margin-top: 5rem;
+    height: 16.5rem;
+    /* background-color: red; */
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    flex-wrap: wrap;
+    display: flex;
+    column-gap: 10px;
+    justify-content: space-evenly;
+}
+.inner_main_projact{
+    height: 30rem;
+    /* background-color: #a2a3bb; */
+    
+}
+.text_discriptions{
+    margin: 3rem 0rem;
+    width: 24rem;
+    line-height: 1.5rem;
+    
+}
+.text_discriptions p{
+    color: #a2a3bb;
+    text-align: left;
+    font-size: 1rem;
+    
+}
+.text_discriptions h3{
+    font-weight: 800;
+}
+.firstProject{
+    width: 24rem;
+    height: 15rem;
+    background-color: #a2a3bb;
+   
+}
+
+.Zoom{
+    overflow: hidden;
+    transform: scale(1.05); /* Start zoomed in slightly */
+    transition: transform 0.5s ease; /* Smooth transition over 0.5 seconds */
+  /* transition: transform 0.5s ease-out; */
+}
+.firstProject img:hover{
+    transform: scale(1.05); /* Slight zoom-out effect */
+    transition: 0.3s ease-in-out;
+}
+.fourPrajact{
+    margin-top: 5rem;
+    min-height: 16.5rem;
+    /* background-color: red; */
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    flex-wrap: wrap;
+    display: flex;
+    column-gap: 25px;
+    justify-content: space-evenly;
+
+}

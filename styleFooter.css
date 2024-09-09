@@ -1,0 +1,12 @@
+.footer_box{
+    color: white;
+
+
+}
+#main_box_footer{
+    margin: 0rem 0rem;
+    margin-bottom: 5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

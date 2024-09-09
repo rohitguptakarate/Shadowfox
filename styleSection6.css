@@ -1,0 +1,99 @@
+.sixSections{
+    min-height: 900px;
+    color: white;
+    margin: 10px 150px;
+}
+.sixSections h2{
+    font-weight: 900;
+    font-size: 7vw;
+    position: absolute;
+    z-index: -1;
+    color: rgba(255, 255, 255, 0.1);
+    left: 0;
+    margin: 10px 150px;
+
+}
+.sixSections h1{
+    font-size: 3rem;
+    padding: 25px 50px;
+
+}
+.discription_contact p{
+    width: 65rem;
+    color: #a2a3bb;
+    margin-left: 4rem;
+    /* margin-top: 1.5rem; */
+
+}
+.SocialMedia_icon{
+    margin-top: 9rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    /* margin-left: 5rem; */
+    
+}
+.icons{
+    width: 4rem;
+    height: 4rem;
+    background-color:#101935;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 3rem;
+}
+.text{
+    margin-top: 2rem;
+    line-height: 2rem;
+    align-items: center;
+    /* margin-left: -1rem; */
+    text-align: center;
+    
+}
+.iconMain{
+    max-width: 12rem;
+}
+.Have_any_Question{
+    margin-top: 5rem;
+    text-align: center;
+}
+.heading{
+    display: inline-block;
+    
+}
+.heading h1{
+    font-weight: 400;   
+}
+#clickherebtn{
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 3rem;
+    background-color: #1e2947;
+    display: inline-block;
+    border: none;
+    color: #ffd13a;
+    margin-left: -2rem;
+    cursor: pointer;
+}
+.contact_me_on_social_media{
+    display: inline-block;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+.contact_Icon{
+    width: 3rem;
+    height: 3rem;
+    background-color:#101935;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 2rem;
+    cursor: pointer;
+    
+    
+
+}

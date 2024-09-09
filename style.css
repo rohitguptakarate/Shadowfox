@@ -1,0 +1,221 @@
+.projactNo {
+    /* line-height: 1.8rem; */
+    padding-top: 2rem;
+}
+
+.ProjactNumber {
+    color: #FFD13A;
+    width: 2rem;
+    display: inline-block;
+
+
+}
+
+.ProjactCompleted {
+    font-weight: bold;
+}
+
+.Linkedbtn {
+    font-size: 15px;
+    width: 5rem;
+    height: 1.8rem;
+    background-color: #FFD13A;
+    border-radius: 1.5rem;
+    margin: 2.5rem 0rem;
+    display: flex;
+    align-items: center;
+
+
+}
+#mywork a{
+    text-decoration: none; 
+    color: #1a1a1a;
+    font-weight: 500;
+}
+
+
+#alinkbtn {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0.6rem 0.5rem;
+    object-fit: cover;
+    color: black;
+}
+
+.thirdSections {
+    min-height: 500px;
+    color: white;
+    margin: 10px 150px;
+}
+
+.skillSections h2 {
+    font-weight: 900;
+    font-size: 7vw;
+    position: absolute;
+    z-index: -1;
+    color: rgba(255, 255, 255, 0.1);
+    left: 0;
+    margin: 10px 150px;
+}
+
+.skillSections h1 {
+    font-size: 3rem;
+    padding: 25px 50px;
+}
+
+.skillRatio {
+
+    width: 70rem;
+    height: 25rem;
+    margin: 3rem 0rem;
+    
+     /* margin-right: -15px; */
+    /* margin-left: -15px;  */
+    line-height: 3rem;
+    /* background-color: aqua; */
+    
+}
+
+.innerpart {
+    height: 10px;
+    background-color: #1a1a1a;
+    box-shadow: none;
+    overflow: visible;
+}
+
+.mostInnerpartHTML {
+    height: 10px;
+    background: #FFD13A;
+    width: 97%;
+    box-shadow: none;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 600;
+    position: relative;
+    overflow: visible;
+}
+
+.mostInnerpartHTML span {
+    position: absolute;
+    top: -38px;
+    right: 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.mostInnerpartCSS {
+    height: 10px;
+    background: #FFD13A;
+    width: 85%;
+    box-shadow: none;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 600;
+    position: relative;
+    overflow: visible;
+}
+
+.mostInnerpartCSS span {
+    position: absolute;
+    top: -38px;
+    right: 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+
+}
+.mostInnerpartJava{
+    height: 10px;
+    background: #FFD13A;
+    width: 80%;
+    box-shadow: none;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 600;
+    position: relative;
+    overflow: visible;
+
+}
+.mostInnerpartJava span{
+    position: absolute;
+    top: -38px;
+    right: 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+
+}
+.mostInnerpartJs{
+    height: 10px;
+    background: #FFD13A;
+    width: 87%;
+    box-shadow: none;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 600;
+    position: relative;
+    overflow: visible;
+
+}
+.mostInnerpartJs span{
+    position: absolute;
+    top: -38px;
+    right: 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+
+}
+.mostInnerpartC{
+    height: 10px;
+    background: #FFD13A;
+    width: 87%;
+    box-shadow: none;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 600;
+    position: relative;
+    overflow: visible;
+
+}
+.mostInnerpartC span{
+    position: absolute;
+    top: -38px;
+    right: 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+
+}
+.mostInnerpartPython{
+    height: 10px;
+    background: #FFD13A;
+    width: 87%;
+    box-shadow: none;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 600;
+    position: relative;
+    overflow: visible;
+
+}
+.mostInnerpartPython span{
+    position: absolute;
+    top: -38px;
+    right: 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+
+}
+.discriptions{
+    margin: 3rem 0rem;
+    display: flex;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #a2a3bb;
+    width: 65rem;
+    text-align: left;
+}
+

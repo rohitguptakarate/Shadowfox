@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styleSection4.css">
+        <link rel="stylesheet" href="styleSection5.css">
+        <link rel="stylesheet" href="styleSection6.css">
+        <link rel="stylesheet" href="styleFooter.css">
+        <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        
+        body{
+            background-color: rgb(0, 0, 33);
+            font-family: "Poppins", sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            height: 75px;
+            background-color: rgb(18, 18, 62);
+            color: white;
+            padding: 23px;
+            top: 0;
+            position: fixed;
+            width: 100vw;
+           
+            
+        }
+        .right-text ul {
+            display: flex;
+
+        }
+        .right-text ul li{
+            list-style: none;
+            margin: 0px 23px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            position: relative;
+    
+        }
+        .right-text ul li:hover{
+            font-size: 1.1rem;   
+        }
+        
+        .right-text ul li a.active{
+            /* color: #e08799; */
+        }
+        .right-text ul li a.active::after,
+        .right-text ul li:hover::after{
+            content: "";
+            width: 50%;
+            height: 2px;
+            background: #FFD13A;
+            position: absolute;
+            bottom: -4px;
+            left: 0px;   
+            transition: 0.3s ease;
+        }
+        .left-text{
+            font-size: 1.2rem;
+        }
+        .first-section{
+            display: flex;
+           justify-content: space-around;
+           margin:160px 0px;
+           
+        }
+        .first-section-left{
+            width: 300px;
+        }
+        .textsize {
+            font-size: 2.5rem;
+        }
+        #element{
+            color: rgb(134, 58, 144);
+            color: #CEE5F2;
+            color: #e08799;
+            /* color: #FC764A; */
+        }
+       hr{
+        border: 0;
+        background-color: rgb(119, 69, 120);
+        height: 1.2px;
+        margin: 20px 50px;
+       }
+        .About-section{
+            color: white;
+            margin: 10px 150px;
+            min-height: 900px;
+        }
+        .About-section h2{
+        position: absolute;
+        margin: 10px 150px;
+        left: 0;
+        font-size: 7vw;
+        color: rgba(255, 255, 255, 0.1);
+        z-index: -1;
+        font-weight: 900;
+        }
+        .About-section h1{
+            font-size: 3rem;
+            padding: 25px 50px;
+        }
+        .right-text a{
+            text-decoration: none;
+            color: white;
+        }
+        .btn{
+            display: flex;
+            gap: 15px;
+            padding:  15px 0px;
+        }
+        .btn button{
+            width: 100px;
+            height: 30px;
+            text-align: center;  
+            border-radius: 8px;
+            border: oldlace;  
+            cursor: pointer;
+        }
+        .buttonColor{
+            background-color: rgb(21, 21, 61);
+            color: white;
+        }
+        .buttonColor:hover{
+            background-color: white;
+            color: black;    
+        }
+        /* profile Image  */
+        .profileImage{
+            width: 310px;
+            height: 310px;
+            /* background-color: rgba(0, 0, 0, 0.2); */
+            border-radius: 150px;
+            padding: 7px 0px;
+            margin: 8px;
+      
+        }
+        .profileImage img{
+            border-radius: 150px;
+     
+        }
+        .LeftprofileImg img{
+            width: 25rem;
+             height: 23rem; 
+             object-fit: cover;
+        }
+        .borderimage{
+            width: 315px;
+            height: 315px;
+            background-color:#FEFDFC;
+            border-radius: 160px;
+            margin: 10px;
+            object-fit: cover;
+        }
+        .myName{
+            margin: 2rem 3.5rem;
+            font-weight: 600;
+            line-height: 1.5rem;
+            
+        }
+        .aboutMain{
+            display: flex;     
+        }
+        .About-section_Right{
+            padding: 0rem 2rem;
+            margin-left: 7rem;
+            margin-top: 4rem;
+            width: 50rem;
+            height: 30rem;
+             /* background-color: #e08799;  */
+        }
+        #profilediscriptios{
+            line-height: 3.5rem;
+           
+        }
+        #subUL{
+            font-weight: bold;
+            width: 120px;
+            display: inline-block;  
+        }
+        #subULdiscriptionPart{
+            margin-left: 10rem;
+            margin-bottom: 10px;
+            color: #a2a3bb;
+
+        }
+       </style>
+
+    </head>
+    <body>
+            <!-- this is navBar  -->
+        <nav>
+            <div class="left-text">
+                Rohit.Portfolio
+            </div>
+            <div class="right-text">
+                <ul>
+                    <li><a class="active" href="#Home_section">Home</a></li>
+                    <li><a href="#About-section">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#Projact_section">Projects</a></li>
+                    <li><a href="#Contact_me">Contact Me</a></li>
+                </ul>
+            </div>
+
+        </nav>
+      
+        <main>
+            <!-- this is first section  -->
+            <section class="first-section" id="Home_section">
+                <div class="first-section-left">
+                    <div class="hello">
+                        <h5 style="color: gray;">HELLO!</h5>
+                    </div>
+                    <div class="frontend-devloper">
+                        <h1 style="color: white;" class="textsize">I'm a
+                            frontend &
+                            backend devloper
+                            in India.</h1>
+                        <span id="element"></span>
+                    </div>
+                    <div class="btn">
+                        <button type="button" class="button  buttonColor">Hire
+                            me</button>
+                        <button type="button" class="button" id="mywork"><a href="https://github.com/rohitguptakarate">My Work</a></button>
+                    </div>
+                </div>
+                <div class="LeftprofileImg">
+                    <img src="./FrontProfile.png" alt="FrontProfile">
+
+                </div>
+            </section>
+            <hr>
+
+            <!-- this is for second section  -->
+            <section class="About-section" id="About-section">
+                <h2 class="big">About</h2>
+                <h1>About Me</h1>
+                <!-- this is for about sections -->
+                <div class="aboutMain">
+                    <div class="About-section_left">
+                        <div class="borderimage">
+                            <div class="profileImage">
+                                <img src="profileImage.png" alt="profile Image"
+                                    width="300px" height="300px">
+                            </div>
+                        </div>
+                        <div class="myName">
+                            <p>Name : <span>ROHIT GUPTA</span></p>
+                            <p>Job Role : <span>Web Devlopment</span></p>
+
+                        </div>
+                    </div>
+
+                    <div class="About-section_Right">
+                        <p style="color: gray">ABOUT</p><br>
+                        <p> I'm Rohit Gupta, a dedicated software developer and
+                            lifelong learner currently pursuing my Master's in
+                            Computer Applications (MCA) at Dr. APJ Abdul Kalam
+                            Technical University, with an expected completion in
+                            2025. I recently earned a BSc in Mathematics from
+                            Veer Bahadur Singh University in 2023.</p>
+                        <br>
+
+                        <ul style="list-style-type: none;"
+                            id="profilediscriptios">
+                            <li>
+                                <span id="subUL"> Profile :</span>
+                                <span id="subULdiscriptionPart">Full Stack
+                                    Devloper</span>
+                            </li>
+                            <li>
+                                <span id="subUL">Education :</span>
+                                <span id="subULdiscriptionPart">Master of
+                                    Computer Applications</span>
+                            </li>
+                            <li>
+                                <span id="subUL">Language :</span>
+                                <span id="subULdiscriptionPart">English and
+                                    Hindi</span>
+                            </li>
+                            <li>
+                                <span id="subUL">other skills :</span>
+                                <span id="subULdiscriptionPart">Git , GitHub
+                                </span>
+                            </li>
+                            <li>
+                                <span id="subUL">Interest :</span>
+                                <span id="subULdiscriptionPart">Traveling ,
+                                    Teaching</span>
+                            </li>
+                            <li>
+                                <span id="subUL">E-mail :</span>
+                                <span
+                                    id="subULdiscriptionPart">Rohitguptakarategzp@gmail.com</span>
+                            </li>
+                            <li>
+                                <span id="subUL">Country :</span>
+                                <span id="subULdiscriptionPart">INDIA</span>
+                            </li>
+                        </ul>
+                        <div class="projactNo">
+                            <span class="ProjactNumber">5+</span>
+                            <span class="ProjactCompleted">Projacts
+                                completed</span>
+                        </div>
+                        <div class="Linkedbtn">
+                            <a href="https://www.linkedin.com/in/rohit-gupta02/"
+                                id="alinkbtn" target="_blank">LINKEDIN</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+            <!-- this is third sections -->
+            <section class="thirdSections">
+                <!-- this is for skill  -->
+                <div class="skillSections">
+                    <h2>Skill</h2>
+                    <h1>My Skills</h1>
+
+                </div>
+                <div class="discriptions">
+                    <p>Proficient in Full Stack Development with expertise in
+                        JavaScript and Java. Strong foundation in HTML, CSS, and
+                        modern web technologies, gained through comprehensive
+                        training and hands-on projects. Skilled in building
+                        responsive, dynamic websites and applications, with a
+                        focus on clean, efficient code and user-centric
+                        design.</p>
+                </div>
+                <div class="skillRatio">
+
+                    <!-- HTML Skill  -->
+                    <div class="skillOptions">
+                        <h3>HTML</h3>
+                        <div class="innerpart">
+                            <div class="mostInnerpartHTML">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CSS Skill  -->
+                    <div class="skillOptions ">
+                        <h3>CSS</h3>
+                        <div class="innerpart">
+                            <div class="mostInnerpartCSS">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Js Skill  -->
+                    <div class="skillOptions ">
+                        <h3>JavaScript</h3>
+                        <div class="innerpart">
+                            <div class="mostInnerpartJs">
+                                <span>87%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Java Skill  -->
+                    <div class="skillOptions ">
+                        <h3>Java</h3>
+                        <div class="innerpart">
+                            <div class="mostInnerpartJava">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- C++ Skill  -->
+                    <div class="skillOptions ">
+                        <h3>C++</h3>
+                        <div class="innerpart">
+                            <div class="mostInnerpartC">
+                                <span>82%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Python Skill  -->
+                    <div class="skillOptions ">
+                        <h3>Python</h3>
+                        <div class="innerpart">
+                            <div class="mostInnerpartPython">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- this is Fourth sections -->
+            <section class="fourthSections">
+                <h1>Education</h1>
+                <div class="borderLine"></div>
+                <!-- Adding Education here -->
+                <div class="main_Education_box">
+                    <div class="firstleft">
+                        <h4>September 2023 - Ongoing</h4>
+                        <h3>MCA</h3>
+                        <p>Dr. A.P.J. Abdul Kalam Technical University</p>
+                    </div>
+                    <div class="firstleft">
+                        <h4>2021 - 2023</h4>
+                        <h3>B.Sc</h3>
+                        <p>Veer Bahadur Singh Purvanchal University,Jaunpur</p>
+
+                    </div>
+                    <div class="firstleft">
+                        <h4>2019</h4>
+                        <h3>Intermediate</h3>
+                        <p>Aryan Public School</p>
+                    </div>
+                    <div class="firstleft">
+                        <h4>2017</h4>
+                        <h3>High School</h3>
+                        <p>Aryan Public School</p>
+
+                    </div>
+                    <!-- <div class="firstleft"> education 1</div>
+                 <div class="firstleft">  education 2</div> -->
+                </div>
+
+                <div class="downloadResume">
+                    <div class="butn">
+                        <a
+                            href="https://drive.google.com/file/d/1-DOxIhRNbdYzXloEsAVy8maYoT20iK18/view?usp=drivesdk"
+                            download="YourName_Resume.pdf"
+                            target="_blank">DOWNLOAD RESUME</a>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- this is Fifth sections -->
+            <section class="fifthSections" id="Projact_section">
+                <h2 class="big">Projacts</h2>
+                <h1>Projacts</h1>
+                <div class="discription_Projact">
+                    <p>Below are the sample Web Devlopment projects.A responsive
+                        web app built using HTML, CSS, and JavaScript. Features
+                        include dynamic forms, smooth animations, and
+                        mobile-friendly design</p>
+                </div>
+                <!-- here to add projact  -->
+                <div class="Here_projacts">
+                    <!-- first Projact  -->
+                    <div class="inner_main_projact">
+                        <div class="firstProject">
+                            <a class="Zoom"
+                                href="https://rohitguptakarate.github.io/linkedin/"><img
+                                    src="linkedin-homepage.jpg" alt="image"
+                                    width="100%" height="110%"></a>
+                        </div>
+                        <div class="text_discriptions">
+                            <h3>Linked-In static Page </h3>
+                            <p>As part of my Full Stack Development training, I
+                                created a static LinkedIn profile page using
+                                HTML and CSS. This project focused on
+                                replicating essential components of the LinkedIn
+                                interface, including the navigation bar, profile
+                                section, and key elements of the user
+                                interface</p>
+                        </div>
+
+                    </div>
+                    <!-- second Projact  -->
+                    <div class="inner_main_projact">
+                        <div class="firstProject">
+                            <a class="Zoom"
+                                href=" https://rohitguptakarate.github.io/login_Page/"><img
+                                    src="landingpage.png" alt="image"
+                                    width="100%" height="110%"></a>
+                        </div>
+                        <div class="text_discriptions">
+                            <h3>Leanding Page</h3>
+                            <p>This project involved designing a fully
+                                responsive landing page using HTML and CSS. The
+                                goal was to create a clean, user-friendly
+                                interface with optimized layout, typography, and
+                                visual elements. Key features included a
+                                structured navigation menu, visually appealing
+                                hero section, and well-organized content
+                                areas.</p>
+                        </div>
+                    </div>
+                    <!-- third projact  -->
+                    <div class="inner_main_projact">
+                        <div class="firstProject">
+                            <a class="Zoom"
+                                href=" https://rohitguptakarate.github.io/QuizApp/"><img
+                                    src="Quiz App.png" alt="image" width="100%"
+                                    height="110%"></a>
+                        </div>
+                        <div class="text_discriptions">
+                            <h3>Quiz App</h3>
+                            <p>This interactive Quiz App was developed as a
+                                major project during the Full Stack Development
+                                Career Program by Skill Academy (Testbook).
+                                Designed for users of all levels, the app
+                                features a seamless interface that allows users
+                                to select from four distinct categories.</p>
+                        </div>
+                    </div>
+
+                    <!-- Next Line Projact  -->
+                    <div class="fourPrajact">
+                        <!-- four projact  -->
+                        <div class="inner_main_projact">
+                            <div class="firstProject">
+                                <a class="Zoom"
+                                    href="http://tic-tac-toe-game-8a5msaaql-rohit-guptas-projects-35ddfc19.vercel.app"><img
+                                        src="Tic_tac.png" alt="image"
+                                        width="100%" height="110%"></a>
+                            </div>
+                            <div class="text_discriptions">
+                                <h3>Modern Tic-Tac-Toe Game with Responsive
+                                    Design and JavaScript Logic</h3>
+                                <p>Developed a classic Tic-Tac-Toe game
+                                    utilizing HTML, CSS, and JavaScript,
+                                    designed to enhance my skills in front-end
+                                    web development and game logic
+                                    implementation. </p>
+                            </div>
+                        </div>
+                        <!-- five projact  -->
+                        <div class="inner_main_projact">
+                            <div class="firstProject">
+                                <a class="Zoom"
+                                    href="https://rohitguptakarate.github.io/Rock_Game/"><img
+                                        src="Rock_paper.png" alt="image"
+                                        width="100%" height="110%"></a>
+                            </div>
+                            <div class="text_discriptions">
+                                <h3>Rock Paper Scissors Game</h3>
+                                <p>This Rock Paper Scissors game was developed as a fun and interactive project to demonstrate core programming skills. The game allows users to play the classic hand game against a computer opponent, with options for selecting Rock, Paper, or Scissors. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- <hr> -->
+
+
+
+            <!-- this is Six Sections  -->
+             <section class="sixSections" id="Contact_me">  
+                <!-- here to start -----  -->
+                <h2 class="big">Contact</h2>
+                <h1>Contact Me</h1>
+                <div class="discription_contact">
+                    <p>Below are the details to reach out to me!</p>
+                </div> 
+                
+                    
+                <div class="SocialMedia_icon">
+                    <!-- first icon -->
+                     <div class="iconMain">
+                    <div class="icons">
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="23" viewBox="0 0 384 512">!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.<path fill="#ffd13a" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+
+                    </div>
+                    <div class="text">
+                        <h4>ADDRESS</h3>   
+                        <p>Uttar Pradesh ,India</p> 
+                    </div>
+                    </div>
+                    
+                    
+                    <!-- second icon  -->
+                    <div class="iconMain">
+                    <div class="icons">
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="24" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffd13a" d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                        
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 24px;">!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.<path fill="#ffd13a" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg> -->
+                    </div>
+                    <div class="text">
+                        <h4>CONTACT NUMBER</h3>
+                        <P>+91-9198734788</P>
+                    </div>
+                    
+                    </div>
+                    
+                    <!-- third icon  -->
+                    <div class="iconMain">
+                    <div class="icons">
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="24" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffd13a" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                    </div>
+                    <div class="text">
+                        <h4>EMAIL ADDRESS</h4>
+                        <P>rohitguptakarategzp@gmail.com</P>
+                    </div>
+                    
+                    </div>
+
+                    <!-- forth icon  -->
+                    <div class="iconMain">
+                    <div class="icons">
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="24" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffd13a" d="M177.8 63.2l10 17.4c2.8 4.8 4.2 10.3 4.2 15.9l0 41.4c0 3.9 1.6 7.7 4.3 10.4c6.2 6.2 16.5 5.7 22-1.2l13.6-17c4.7-5.9 12.9-7.7 19.6-4.3l15.2 7.6c3.4 1.7 7.2 2.6 11 2.6c6.5 0 12.8-2.6 17.4-7.2l3.9-3.9c2.9-2.9 7.3-3.6 11-1.8l29.2 14.6c7.8 3.9 12.6 11.8 12.6 20.5c0 10.5-7.1 19.6-17.3 22.2l-35.4 8.8c-7.4 1.8-15.1 1.5-22.4-.9l-32-10.7c-3.3-1.1-6.7-1.7-10.2-1.7c-7 0-13.8 2.3-19.4 6.5L176 212c-10.1 7.6-16 19.4-16 32l0 28c0 26.5 21.5 48 48 48l32 0c8.8 0 16 7.2 16 16l0 48c0 17.7 14.3 32 32 32c10.1 0 19.6-4.7 25.6-12.8l25.6-34.1c8.3-11.1 12.8-24.6 12.8-38.4l0-12.1c0-3.9 2.6-7.3 6.4-8.2l5.3-1.3c11.9-3 20.3-13.7 20.3-26c0-7.1-2.8-13.9-7.8-18.9l-33.5-33.5c-3.7-3.7-3.7-9.7 0-13.4c5.7-5.7 14.1-7.7 21.8-5.1l14.1 4.7c12.3 4.1 25.7-1.5 31.5-13c3.5-7 11.2-10.8 18.9-9.2l27.4 5.5C432 112.4 351.5 48 256 48c-27.7 0-54 5.4-78.2 15.2zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"/></svg>
+                        <!-- <a href="https://drive.google.com/file/d/1-DOxIhRNbdYzXloEsAVy8maYoT20iK18/view?usp=drivesdk">link</a> -->
+                    </div>
+                    <div class="text">
+                        <h4>DOWNLOAD RESUME</h4>
+                        <P>resume_link</P>
+                    </div>
+                    </div>
+
+                    
+                </div>  
+
+                <div class="Have_any_Question">
+                    
+                        <div class="heading">
+                            <h1>Have a Question?</h1>
+                        </div>
+                        <span><button id="clickherebtn">CLICK HERE</button></span>
+                       
+                        <div class="Mian_icon_box" >
+                            <div class="find_me"><p>Find me on</p></div>
+                     
+                            <div class="contact_me_on_social_media" >
+                                <!-- whatsapp -->
+                             <div class="contact_Icon" id="whatsappIcon">
+                                <svg xmlns="http://www.w3.org/2000/svg"  width="20" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffd13a" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+                             </div>
+                             <!-- instgram  -->
+                             <div class="contact_Icon" id="instagramIcon" >
+                                <svg xmlns="http://www.w3.org/2000/svg"  width="21" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffd13a" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                             </div>
+                             <!-- email  -->
+                             <div class="contact_Icon" id="emailIcon">
+                                <svg xmlns="http://www.w3.org/2000/svg"  width="24" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffd13a" d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z"/>
+                                </svg>
+                             </div>  
+                        </div>
+                        </div>
+                </div>
+             </section>
+
+             <!-- this is footer  -->
+              <footer id="main_box_footer">
+                <div class="footer_box">
+                    <p>Copyright &copy; 2024 All rights reserved </p>
+                </div>
+              </footer>
+
+        </main>
+
+
+
+        <script
+            src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js">
+        </script>
+        <!-- Setup and start animation! -->
+        <script>
+        var typed = new Typed('#element', {
+      strings: ['Software Devloper', 'Web Devloper',],
+      typeSpeed: 50,
+    });
+    
+         </script>
+         <script src="app.js"></script>
+
+    </body>
+</html>

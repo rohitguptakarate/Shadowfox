@@ -1,0 +1,74 @@
+.fourthSections{
+    min-height: 500px;
+    /* background-color: grey; */
+    margin: 10px 250px;
+    
+    
+
+}
+.fourthSections h1{
+    color: white;
+    text-align: center;
+    margin-top: 10rem;
+    font-weight: 00;
+    font-size: 2rem;
+   
+}
+
+.borderLine{
+    border: 0;
+    background-color: rgb(119, 69, 120);
+    height: 5px;
+    margin: 15px ;
+    /* margin-top: 10rem; */
+}
+.main_Education_box{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* column-gap: 20px; */
+    row-gap: 20px;
+    
+    
+
+   
+}
+.firstleft{
+    color: white;
+    min-width: 28rem;
+    height: 10rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5) !important;
+    
+    
+}
+.firstleft{
+    padding: 2.5rem 2rem;
+    line-height: 2rem;
+}
+.firstleft p{
+    color: #a2a3bb;
+}
+.firstleft h4{
+    color: #FFD13A;
+}
+
+.downloadResume{
+    padding: 0.5rem 0rem;
+    text-align: center;
+    width: 11rem;
+    height: 3rem;
+    background-color: #FFD13A;
+    border-radius: 2.5rem;
+    margin: 5rem 27rem;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.downloadResume a{
+    text-decoration: none;  
+    font-weight: 700;
+    font-size: 14PX;
+    color: black;
+}
