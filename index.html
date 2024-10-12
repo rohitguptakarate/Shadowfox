@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="styleSection5.css">
         <link rel="stylesheet" href="styleSection6.css">
         <link rel="stylesheet" href="styleFooter.css">
+        <link rel="stylesheet" href="mediaqueary.css">
+        
         <style>
 
         *{
@@ -201,36 +203,8 @@
             color: #a2a3bb;
 
         }
-        @media only screen and (max-width: 480px) {
-            nav {
-                /* background-color: #e08799; */
-                width: 100%;
-            }
-            .sixSections{
-                margin-top: 90rem;
-            }
-            .main_box_footer{
-               margin-top: 20rem;
-            }
-            .thirdSections{
-                margin-top: 70rem;
-            }
-            .first-section{
-               margin-left: 40rem;
-            }
-            .fifthSections{
-                margin-left: 30rem;
-            }
-            .fourthSections{
-                /* display: contents; */
-                margin-left: 30rem;
-            }
-            .sixSections{
-                margin-left: 20rem;
-            }
-           
-            
-    }
+   
+
        </style>
 
     </head>
@@ -288,7 +262,7 @@
                 <!-- this is for about sections -->
                 <div class="aboutMain">
                     <div class="About-section_left">
-                        <div class="borderimage">
+                        <div class="borderimage" id="queary_image">
                             <div class="profileImage">
                                 <img src="/Image_Folder/profileImage.png" alt="profile Image"
                                     width="300px" height="300px">
@@ -688,7 +662,7 @@
                     <span><button id="clickherebtn">CLICK HERE</button></span>
 
                     <div class="Mian_icon_box">
-                        <div class="find_me"><p>Find me on</p></div>
+                        <div class="find_me queary_me"><p>Find me on</p></div>
 
                         <div class="contact_me_on_social_media">
                             <!-- whatsapp -->
